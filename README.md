@@ -1,6 +1,25 @@
-# hc-probation-eval
+# hc-coin-eval-calc
 
 > A Vue.js project
+
+## Basic Use
+
+```html
+<div id="app"></div>
+
+<script src="https://commbocc.github.io/hc-coin-eval-calc/dist/build.js"></script>
+<script>
+new HcCoinEvalCalc().$mount('#app')
+// // the above is the same as:
+// new HcCoinEvalCalc({ propsData: {
+//   title: 'Employee Probation/Evaluation Dates',
+//   midTermVal: 3,
+//   midTermUnit: 'months',
+//   endTermVal: 6,
+//   endTermUnit: 'months'
+// }}).$mount('#app')
+</script>
+```
 
 ## Build Setup
 

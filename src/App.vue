@@ -3,7 +3,7 @@
 
     <div class="card-header bg-info text-white">
 
-      <h4 class="text-center mb-2">Employee Probation/Evaluation Dates</h4>
+      <h4 class="text-center mb-2">{{ title }}</h4>
 
       <div v-if="true" class="form-group m-0 d-flex">
         <div class="input-group input-group-sm">
@@ -56,6 +56,10 @@ import moment from 'moment'
 
 export default {
   props: {
+    title: {
+      type: String,
+      default: 'Employee Probation/Evaluation Dates'
+    },
     midTermVal: {
       type: Number,
       default: 3
