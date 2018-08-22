@@ -6,36 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://commbocc.github.io/html-wrapper/static/css/app.css">
+  <link rel="stylesheet" href="https://commbocc.github.io/coin-v3-styles/dist/static/css/app.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
 
   <title>hc-probation-eval</title>
 </head>
 <body>
+  <div class="pageStyles">
+    <div class="container">
 
-  <div id="hc-main">
-
-    <!-- https://www.w3.org/WAI/GL/2016/WD-WCAG20-TECHS-20160105/G1 -->
-    <nav is="hc-navigation" logo-href="./" skip-content-link="#main-content"></nav>
-
-
-    <ol is="hc-banner" title="Page Title">
-      <!-- ancestors -->
-      <li class="breadcrumb-item"><a href="./">Home</a></li>
-    </ol>
-
-    <div id="main-content">
       <div id="app"></div>
+
     </div>
-
-    <footer is="hc-footer"></footer>
-
   </div>
 
-  <!-- Optional JavaScript -->
-  <script type="text/javascript" src="https://commbocc.github.io/html-wrapper/static/js/manifest.js"></script>
-  <script type="text/javascript" src="https://commbocc.github.io/html-wrapper/static/js/vendor.js"></script>
-  <script type="text/javascript" src="https://commbocc.github.io/html-wrapper/static/js/app.js"></script>
-
   <script src="./dist/build.js"></script>
+  <script>
+  // new HcCoinEvalCalc({ propsData: {
+  //   midTermVal: 3,
+  //   midTermUnit: 'months',
+  //   endTermVal: 6,
+  //   endTermUnit: 'months'
+  // }}).$mount('#app')
+  new HcCoinEvalCalc().$mount('#app')
+  </script>
 </body>
 </html>
