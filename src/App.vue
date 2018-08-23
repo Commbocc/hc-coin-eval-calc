@@ -43,7 +43,7 @@
           <td class="text-center">{{ hireMoment.format('LL') }}</td>
         </tr>
         <tr>
-          <th>Evaluation Cycyle End Date:</th>
+          <th>Evaluation Cycle End Date:</th>
           <td class="text-center">{{ endTerm.format('LL') }}</td>
         </tr>
       </tbody>
